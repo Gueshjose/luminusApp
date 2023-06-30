@@ -6,7 +6,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 class Utilisateur(models.Model):
     name=models.CharField(max_length=20)
-    numeroClien=models.CharField(max_length=15)
+    numeroClient=models.CharField(max_length=15)
     image=models.ImageField(upload_to='images/')
     mail=models.EmailField()
     gsm=models.CharField(max_length=12)
